@@ -26,7 +26,7 @@ const PoolViewWrapper = styled.div`
 const InfoPanelWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: row;
     width: 100%;
     justify-content: flex-start;
     margin-bottom: 20px;
@@ -56,8 +56,6 @@ const Dashboard = observer((props: RouteComponentProps) => {
         });
         return TVL;
     }
-
-    const feeText = '-';
 
     const { totalVolume, volume24H, Pies, totalFeesGenerated } = dashboardStore;
     const dataBtc = Pies[BTC];
@@ -102,9 +100,11 @@ const Dashboard = observer((props: RouteComponentProps) => {
                     text={`$ ${formatCurrency(
                         bnum(dataUsd.totalFeesGenerated)
                     )}`}
-                    subText={`Fees Generated (${formatFee(
-                        bnum(dataUsd.swapFee)
-                    )})`}
+                    subText={`Fees Generated`}
+                />
+                <InfoPanel
+                    text={`${formatFee(bnum(dataUsd.swapFee))}`}
+                    subText={`Pool Fee`}
                 />
             </InfoPanelWrapper>
             BTC++
@@ -125,9 +125,11 @@ const Dashboard = observer((props: RouteComponentProps) => {
                     text={`$ ${formatCurrency(
                         bnum(dataBtc.totalFeesGenerated)
                     )}`}
-                    subText={`Fees Generated (${formatFee(
-                        bnum(dataBtc.swapFee)
-                    )})`}
+                    subText={`Fees Generated`}
+                />
+                <InfoPanel
+                    text={`${formatFee(bnum(dataBtc.swapFee))}`}
+                    subText={`Pool Fee`}
                 />
             </InfoPanelWrapper>
         </PoolViewWrapper>
