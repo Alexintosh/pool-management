@@ -27,6 +27,7 @@ export default class MarketStore {
         if (!this.assetsLoaded || !this.assets[symbolsToFetch[0]]) {
             throw new Error('Data not initialized to fetch asset prices');
         }
+
         const response = await fetchAssetPrices(
             symbolsToFetch,
             this.assets,
