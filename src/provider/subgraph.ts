@@ -295,6 +295,7 @@ function getPoolQuery(
 }
 
 async function fetchPools(query: string) {
+    console.log('query', query);
     const response = await fetch(SUBGRAPH_URL, {
         method: 'POST',
         headers: {
@@ -307,6 +308,7 @@ async function fetchPools(query: string) {
     });
 
     const payload = await response.json();
+    console.log('payload.data.pools', payload.data.pools);
     const pools = payload.data.pools
         ? payload.data.pools
         : payload.data.poolShares.map(poolShare => poolShare.poolId);

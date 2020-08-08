@@ -12,5 +12,26 @@
         "coingeckoId": "piedao-btc",
         "mintUrl": "https://btc.piedao.org/#/liquidity",
         "icon": "https://raw.githubusercontent.com/pie-dao/brand/master/PIE%20Tokens/BTC%2B%2B.png"
+    },
+    {
+        "address": "0xf24c660931e2b5f390f1b7002ed8f0ebeb8c3f2a",
+        "name": "DEFI++",
+        "coingeckoId": "piedao-btc",
+        "mintUrl": "https://nightly-pools-piedao.netlify.app/#/pools/0x880873a96ce38c7fd39dc714592902b069bde048",
+        "icon": "https://i.imgur.com/pHmtKyX.png"
+    },
+    {
+        "address": "0x94743cfaa3fdc62e9693572314b5ee377eba5d11",
+        "name": "DEFI+S",
+        "coingeckoId": "piedao-btc",
+        "mintUrl": "https://nightly-pools-piedao.netlify.app/#/pools/0xad6a626ae2b43dcb1b39430ce496d2fa0365ba9c",
+        "icon": "https://i.imgur.com/pHmtKyX.png"
+    },
+    {
+        "address": "0x71c4f1a8d95ad1faa0f893b74ca67fdf53ee63fb",
+        "name": "DEFI+L",
+        "coingeckoId": "piedao-btc",
+        "mintUrl": "https://nightly-pools-piedao.netlify.app/#/pools/0x24d1917c1ae6c085e6b68b6c1a41b8f9de5bd441",
+        "icon": "https://i.imgur.com/pHmtKyX.png"
     }
 ]
